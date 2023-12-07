@@ -25,6 +25,7 @@ sap.ui.define([
 		 */
 
 		getModel: function () {
+
 			return this.getOwnerComponent().getModel();
 		},
 
