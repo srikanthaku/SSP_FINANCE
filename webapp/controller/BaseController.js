@@ -15,6 +15,7 @@ sap.ui.define([
 		},
 
 		addContentDensityClass: function () {
+
 			return this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
 		},
 		/**
