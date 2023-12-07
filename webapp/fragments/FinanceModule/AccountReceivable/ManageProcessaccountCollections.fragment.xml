@@ -4,9 +4,9 @@
 		<fm:SimpleForm title="{i18n>createservicerequest}" layout="ColumnLayout" class="ssp-form-bg" columnsM="2" columnsL="3" columnsXL="4"
 			singleContainerFullSize="true" labelSpanXL="12" labelSpanL="12" labelSpanM="12" labelSpanS="12">
 			<fm:toolbar>
-				<Toolbar   class="ssp-title">
+				<Toolbar class="ssp-title">
 					<Button press=".handleBackPress" icon="sap-icon://nav-back"/>
-					<Title class="ssp-form-bg" id="Title1" text="{i18n>ManageProcessaccountCollection}"/>
+					<Title class="ssp-form-bg" text="{i18n>ManageProcessaccountCollection}"/>
 					<ToolbarSpacer/>
 				</Toolbar>
 			</fm:toolbar>

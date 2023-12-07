@@ -6,7 +6,7 @@
 			<fm:toolbar>
 				<Toolbar   class="ssp-title">
 					<Button press="handleBackPress" icon="sap-icon://nav-back"/>
-					<Title class="ssp-form-bg" id="Title1" text="{i18n>ViewRequest}"/>
+					<Title class="ssp-form-bg" id=" " text="{i18n>ViewRequest}"/>
 					<ToolbarSpacer/>
 				</Toolbar>
 			</fm:toolbar>
