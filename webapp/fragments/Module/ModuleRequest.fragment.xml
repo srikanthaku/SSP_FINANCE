@@ -40,7 +40,7 @@
 			<fm:toolbar>
 				<Toolbar class="ssp-title">
 					<Button icon="sap-icon://nav-back" press="handleBackPress"/>
-					<Title class="ssp-form-bg" id=" " text="{i18n>modulesearch}"/>
+					<Title class="ssp-form-bg" text="{i18n>modulesearch}"/>
 					<ToolbarSpacer/>
 				</Toolbar>
 			</fm:toolbar>
@@ -60,7 +60,7 @@
 			<!--	items="{TabDetailsModel>/ProductTypeSet}">-->
 			<!--	<core:ListItem key="{key}" text="{text}"/>-->
 			<!--</ComboBox>-->
-			<ComboBox id="SD" selectionChange="onSelect" width="100%" valueState="None" enabled="true">
+			<ComboBox selectionChange="onSelect" width="100%" valueState="None" enabled="true">
 				<items>
 					<!--<core:Item key="1" text="Accounts Payable"/>-->
 					<!--<core:Item key="2" text="Accounts Receiva"/>-->
@@ -77,7 +77,7 @@
 				</items>
 			</ComboBox>
 			<Label text="{i18n>SelectSubService}" required="true"/>
-			<ComboBox id="idsubservice" width="100%" valueState="None" placeholder="Select" selectedKey="{TabDetailsModel>/TabData/ProdType}"
+			<ComboBox width="100%" valueState="None" placeholder="Select" selectedKey="{TabDetailsModel>/TabData/ProdType}"
 				items="{TabDetailsModel>/ProductTypeSet}">
 				<core:ListItem key="{key}" text="{text}"/>
 			</ComboBox>

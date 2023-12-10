@@ -93,7 +93,6 @@
 						"TargetApp"
 					]
 				},
-
 				{
 					"name": "ModuleSelect",
 					"pattern": "ModuleSelect",
@@ -111,12 +110,6 @@
 					"pattern": "HomePage",
 					"target": [
 						"HomePage"
-					]
-				}, {
-					"name": "AppHomePage",
-					"pattern": "AppHomePage",
-					"target": [
-						"AppHomePage"
 					]
 				}, {
 					"name": "SlaCreation",
@@ -170,12 +163,7 @@
 					"clearControlAggregation": false,
 					"viewName": "HomePage"
 				},
-				"AppHomePage": {
-					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": false,
-					"viewName": "AppHomePage"
-				},
+			
 				"SlaCreation": {
 					"viewType": "XML",
 					"transition": "slide",
