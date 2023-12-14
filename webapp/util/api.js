@@ -32,7 +32,7 @@ sap.ui.define(["sap/m/MessageBox"], function (MessageBox) {
 			return new Promise(function (resolve, reject) {
 
 				// Use bracket notation to call the dynamic function
-				oModel[apiCall](entity, oPayload, {
+				oModel[apiCall](entity, {
 					filters: [filter],
 					success: function (oData) {
 						resolve(oData);

@@ -12,11 +12,7 @@
 		"dataSources": {
 			"ZSSP_USER_SRV": {
 				"uri": "/sap/opu/odata/sap/ZSSP_USER_SRV/",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
-				}
+				"type": "OData"
 			},
 			"ZSSP_COMMON": {
 				"uri": "/sap/opu/odata/sap/ZSSP_COMMON/",
@@ -86,6 +82,13 @@
 				}
 			},
 			"ZSSP_USER_SRV": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Request",
+					"useBatch": false
+				},
 				"dataSource": "ZSSP_USER_SRV",
 				"preload": true
 			},

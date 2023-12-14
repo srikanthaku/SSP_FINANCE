@@ -21,35 +21,19 @@ sap.ui.define([
 			// 		var aData = oResponse.data;
 
 			// 	}.bind(this));
-			var Filter = this.getFilters("Wiitcco", "X");
+			// 			var Filter = this.getFilters("WTTCO", "X");
 
-			this.getAPI.oDataAPICall(this.getOwnerComponent().getModel("ZSSP_USER_SRV"), 'read', '/User',
-					Filter)
+			var sAPI = `/CheckUserSet(UserName='WT_POWER')`;
+
+			this.getAPI.oDataAPICall(this.getOwnerComponent().getModel("ZSSP_USER_SRV"), 'read', sAPI)
 				.then(function (oResponse) {
-					// 		var aData = oResponse.data;
+
+					var aData = oResponse.data;
 
 				}.bind(this));
 
 		},
-		getFilters: function (sUserName, sIsRequest) {
 
-			var sUserNameFilter = new sap.ui.model.Filter({
-				path: "UserName",
-				operator: sap.ui.model.FilterOperator.EQ,
-				value1: sUserName
-			});
-
-			var sIsRequestFilter = new sap.ui.model.Filter({
-				path: "IsRequest",
-				operator: sap.ui.model.FilterOperator.EQ,
-				value1: sIsRequest
-			});
-			var aUserFilter = [];
-			aUserFilter.push(sUserNameFilter, sIsRequestFilter);
-
-			return aUserFilter;
-
-		},
 		onback: function () {
 			//this.getOwnerComponent().getTargets().display("LandingView");
 
